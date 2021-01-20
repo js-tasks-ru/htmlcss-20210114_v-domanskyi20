@@ -1,0 +1,30 @@
+details {
+  border-radius: 8px;
+  border: 1px solid #ACB5BD;
+  padding: 30px;
+  margin-bottom: 20px;
+  summary {
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    outline: rgba(0,0,0,0);
+    &::-webkit-details-marker {
+      display:none;
+    }
+  }
+  p {
+    display: inline-block;
+    margin: 0;
+    margin-top: 30px;
+    animation: show 0.35s forwards;
+  }
+
+  @keyframes show {
+    0% {
+      transform: translateY(-10%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
