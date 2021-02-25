@@ -1,1 +1,57 @@
-/* Стилизация кнопки */
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.options {
+  margin: 10px 5px;
+  padding: 10px 0;
+}
+
+.options button {
+  width: 180px;
+  height: 48px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-transition: opacity 200ms ease-in-out, all 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out, all 200ms ease-in-out;
+}
+
+.options button.primary {
+  background-color: #4263EB;
+}
+
+.options button.secondary {
+  background-color: #7048E8;
+}
+
+.options button.alternate {
+  color: #495057;
+  border: 1px solid #ACB5BD;
+}
+
+.options button:hover {
+  cursor: pointer;
+}
+
+.options button:hover:not(:disabled).primary {
+  background-color: #2342C0;
+}
+
+.options button:hover:not(:disabled).secondary {
+  background-color: #5028C6;
+}
+
+.options button:hover:not(:disabled).alternate {
+  border-color: #212429;
+}
+
+.options button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=button.css.map */
